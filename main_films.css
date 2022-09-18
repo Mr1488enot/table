@@ -1,0 +1,26 @@
+.table{
+	border: 1px solid #eee;
+	table-layout: fixed;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.table th {
+	font-weight: bold;
+	padding: 5px;
+	background: #efefef;
+	border: 1px solid #dddddd;
+}
+.table td{
+	padding: 5px 10px;
+	border: 1px solid #eee;
+	text-align: left;
+}
+
+button {
+    color: darkgray;
+    background-color: rgb(61, 59, 60);
+}
+
+#edit{
+	padding-left: 3px;
+}

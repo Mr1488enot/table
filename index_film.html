@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main_films.css">
+</head>
+<body>
+    <table>
+        <table class="table">
+            <div></div>
+            <thead>
+                <tr>
+                    <th>films</th>
+                    <th>year</th>
+                    <th>country</th>
+                    <th>genre</th>
+                    
+                </tr>
+            </thead>
+            <tbody id="tbd">
+                <tr>
+                    <td>The Green Mile</td>
+                    <td>1995</td>
+                    <td> США</td>
+                    <td>драма, криминал</td>
+                    <td >
+                        <div id="buttons">
+                            <button id="del" onclick="delButton(this)">удалить</button> 
+                            <button id="edit">Edit</button>
+                        </div>
+                    </td>
+
+                    
+                </tr>
+                <tr>
+                    <td>Schindler's List</td>
+                    <td>1993</td>
+                    <td> США</td>
+                    <td>драма, криминал</td>
+                    <td >
+                        <div id="buttons">
+                        <button id="del" onclick="delButton(this)">удалить</button> 
+                        <button id="edit">Edit</button>
+                        </div>
+                    </td>
+                    
+                </tr>
+            </tbody>    
+        </table>
+       
+        </div>
+        <div_forms>
+            <form>
+                <label for="fname">Name</label>
+                <input type="text" id="fname" name="fname">
+                <label for="fyear">year</label>
+                <input type="number" id="fyear" name="fyear">
+                <label for="fgenre">genre</label>
+                <input type="text" id="fgenre" name="fgenre">
+                <label for="fgenre">country</label>
+                <input type="text" id="fcountry" name="fcountry">
+              </form>  
+        </div>
+        <div id="button_forms" >
+        <button id="myBtn">добавить</button>
+        <button id="myBtnDel">удалить</button>   
+        </div>   
+        <script src="index_films.js"></script>
+</body>
+</html>
