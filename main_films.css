@@ -1,3 +1,22 @@
+
+.table_container {
+	width: 80%;
+    margin: 0 auto;
+	padding-top: 45px;
+}
+
+.forms {
+	width: 80%;
+    margin: 0 auto;
+	padding: 10px 10px;
+}
+
+#button_forms{
+	width: 80%;
+    margin: 0 auto;
+	padding: 10px 10px;
+}
+
 .table{
 	border: 1px solid #eee;
 	table-layout: fixed;
@@ -24,3 +43,10 @@ button {
 #edit{
 	padding-left: 3px;
 }
+
+.sort_search_form {
+	width: 80%;
+    margin: 0 auto;
+	padding: 10px 10px;
+}
+

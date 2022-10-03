@@ -6,15 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main_films.css">
 </head>
 <body>
     <div class="navbar_menu">
+        <div class="menu_heading">Library</div>
+        <div class="menu_visitors">All VISITORS
+            <button class="visitor_button">New visitor</button>
+        </div>
         <ul>
-            <li><a href="index_film.html">фильм</a></li>
-            <li><a href="#">пользователи</a></li>
-            <li><a href="#">о сайте</a></li>
+            <li><a href="index_film.html">Books</a></li>
+            <li><a href="#">Visitors</a></li>
+            <li><a href="#">Cards</a></li>
+            <li><a href="#">Statistics</a></li>
         </ul>
+         <div class="sort_search_form">
+            <label for="sort_name">sort</label>
+            <input type="text" id="sort_id" name="sort_name">
+            <button class="btn_sort" onclick="sortTable()">sort</button>
+            <label for="search">search</label>
+            <input type="number" id="search" name="search">
+            <button class="btn_search">search</button>
+
+         </div>
     </div>
-    <script src="index.js"></script>
+    <div class="table_container">
+    <table>
+        <table class="table">
+            <div></div>
+            <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">name</th>
+                    <th scope="col">phone</th>
+                    <th scope="col">edit</th>
+                    
+                </tr>
+            </thead>
+            <tbody id="tbd">
+              
+            </tbody>    
+        </table>
+       
+        </div>
+        <div class="forms">
+            <form>
+                <label for="id">id</label>
+                <input type="number" id="id" name="id">
+            
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+
+                <label for="phone">phone</label>
+                <input type="number" id="phone" name="phone">
+
+                <label for="edit">edit</label>
+                <input type="text" id="edit" name="edit">
+              </form>  
+        </div>
+        <div id="button_forms" >
+        <button id="myBtn">добавить</button>
+        <!-- <button id="myBtn-edit">редактировать</button> -->
+        <button id="myBtnDel">удалить</button>   
+        </div>   
+    </div>
+        <script src="index_films.js"></script>
+     <script src="index.js"></script>
 </body>
 </html>

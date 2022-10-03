@@ -1,5 +1,23 @@
+
+.menu_heading {
+    color: rgb(17, 131, 165);
+    padding: 14px 16px;
+    font-size: 40px;
+}
+
+
+.menu_visitors{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between; 
+    padding: 15px 5px;
+    color: rgb(17, 131, 165);
+    width: 97%;
+}
+
 .navbar_menu {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     
 }
 

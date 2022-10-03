@@ -1,74 +1,78 @@
 
-/*/function printmovi() {
-     let table = document.getElementsById ("table")
-     for (i=0; i< movies.length; i ++) {
-         tr = document.createElement("tr")
-         table.appendChilde(tr)
 
-         td = document.createElement("td")
-         tr.appendChilde(td)
-         td.innerHTML = movies[i].name
 
-     }
- 
+let books = [{
+  name: 'collete kelly',
+  phone: '0112',
+},
+{
+  name: 'ruby-rose lennon',
+  phone: 23123,
+},
+{
+  name: 'leanne gibbons',
+  phone: 123,
+},
+{
+  name: 'harry potter',
+  phone: 155783,
+},
+{
+  name: 'aaaaaa',
+  phone: 155783,
+},
+];
+
+const table = document.getElementById('tbd');
+
+for (let i = 0; i < books.length; i++) {
+let row = document.createElement('tr');
+row.innerHTML = `<td>${i+1}</td><td>${books[i].name}</td><td>${books[i].phone}</td><td>
+<div id="buttons">
+    <button id="del" onclick="delButton(this)">удалить</button> 
+    <button id="edit" onclick="func(this)">Edit</button>
+</div>
+</td>`;
+table.appendChild(row);
 }
 
-printmovi()
-
-movies.push({name:'qwqew'})
-
-function add(){
-    let name = document.forms[0].name_film.value
-    movies.push(
-        {name: qwerwrer}
-    )
-}
-
-add()*/
+//сортировка
 
 
-
+//
 document.getElementById("myBtn").onclick = addButton;
 
 function addButton() {
     let newTr = document.createElement("tr");
   
-    let tdNume = document.createElement("td");
-    let val1 = document.getElementById("fname").value;
-    tdNume.innerHTML = val1;
+    let tdid = document.createElement("td");
+    let val1 = document.getElementById("id").value;
+    tdid.innerHTML = val1;
   
-    let tdNumber = document.createElement("td");
-    let val2 = document.getElementById("fyear").value;
-    tdNumber.innerHTML = val2;
+    let tdname = document.createElement("td");
+    let val2 = document.getElementById("name").value;
+    tdname.innerHTML = val2;
     
-    let tdGenre = document.createElement("td");
-    let val3 = document.getElementById("fgenre").value;
-    tdGenre.innerHTML = val3;
+    let tdphone = document.createElement("td");
+    let val3 = document.getElementById("phone").value;
+    tdphone.innerHTML = val3;
   
-    let tdCountry = document.createElement("td");
-    let val4 = document.getElementById("fcountry").value;
-    tdCountry.innerHTML = val4;
+    let tdedit = document.createElement("td");
+    let val4 = document.getElementById("edit").value;
+    tdedit.innerHTML = val4;
 
-    /*let tdButton = document.createElement("td");
-    document.getElementById("del").appendChild(tdButton);
-    tdButton.innerHTML=tdButton;*/
+  
     let btn = document.createElement("td");
     let myBatton = document.getElementById("buttons");
     var newBatton = myBatton.cloneNode(true);
     btn.appendChild(newBatton);
 
-    /*let btnEdit = document.createElement("td");
-    let myBattonEdit = document.getElementById("edit");
-    var newBattonEdit = myBattonEdit.cloneNode(true);
-    btn.appendChild(newBattonEdit);*/
 
 
-
-    newTr.appendChild(tdNume);
-    newTr.appendChild(tdNumber);
-    newTr.appendChild(tdGenre);
-    newTr.appendChild(tdCountry);
-    //newTr.appendChild(btn, btnEdit);
+    newTr.appendChild(tdid);
+    newTr.appendChild(tdname);
+    newTr.appendChild(tdphone);
+    newTr.appendChild(tdedit);
     newTr.appendChild(btn);
     let dodac = document.getElementById("tbd");
     
@@ -81,31 +85,17 @@ function addButton() {
 
 
 
-/*function dell () {
-  let dell  = document.getElementById("tbd");
-  for (let i = tbd.rows.lenght-1; i>0; i--) {
-    tbd.deleteRow(i);
-  }
-}*/
-
-
 function delButton(r) {
-    let dell  = document.getElementById("tbd");
-  for (let i = dell.rows.lenght-1; i>0; i--) {
-    tbd.deleteRow(i);
-  }
-    let i = r.parentNode.parentNode.rowIndex;
-    document.getElementById("tbd").deleteRow(i);
+    let i = r.parentNode.parentNode.parentNode.rowIndex;
+    document.getElementById("tbd").deleteRow(i-1);
     
 }
 
-/*function delButton(dell) {
-    var row = dell.parentNode.parentNode;
-    
-    row.parentNode.removeChild(row);
-  
 
-  /*function delButton(r) {
-    var i = r.parentNode.parentNode.rowIndex;
-    document.getElementById("tbd").deleteRow(i);
-}*/
+
+
+
+
+
+
+
